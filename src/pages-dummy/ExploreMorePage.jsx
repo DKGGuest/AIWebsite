@@ -149,9 +149,9 @@ const ExploreMorePage = () => {
   return (
     <div className="container mx-auto p-8">
       <h1 className="text-3xl font-bold mb-8">Welcome to Explore More Page</h1>
-      <p className="mb-8">
+      {/* <p className="mb-8">
         This is the content of the Explore More page. Below are several wide rectangular boxes.
-      </p>
+      </p> */}
 
       {boxesData.map((box, index) => (
         <WideRectangularBox
