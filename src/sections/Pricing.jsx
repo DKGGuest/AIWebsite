@@ -67,7 +67,11 @@ const Pricing = () => {
                                     )}
                                 </div>
 
-                                <Button className="w-full mb-6" href={item.price ? "/pricing" : "mailto:your-email@domain.com"} white={item.price}>
+                                {/* <Button className="w-full mb-6" href={item.price ? "/pricing" : "mailto:your-email@domain.com"} white={item.price}>
+                                    {item.price ? "Get started" : "Contact us"}
+                                </Button> */}
+
+                                <Button className="w-full mb-6" white={item.price}>
                                     {item.price ? "Get started" : "Contact us"}
                                 </Button>
 

@@ -1,6 +1,8 @@
 import React from "react";
 import WideRectangularBox from "../components/WideRectangularBox";
 import { img1, img2, img3, img4, img5, img6 } from "../assets";
+import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 const ExploreMorePage = () => {
   const boxesData = [
@@ -161,6 +163,12 @@ const ExploreMorePage = () => {
           className="mb-8"
         />
       ))}
+
+      <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
+        <Link to="/">
+          <Button>Go to Home</Button>
+        </Link>
+      </div>
     </div>
   );
 };

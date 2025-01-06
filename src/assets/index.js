@@ -86,3 +86,4 @@ export { default as chromecast } from './chrome-cast.svg';
 export { default as sliders04 } from './sliders-04.svg';
 export { default as loading } from './loading.png';
 export { default as background } from './background.jpg';
+export { default as DKGLogo } from './DKGLogo.png';

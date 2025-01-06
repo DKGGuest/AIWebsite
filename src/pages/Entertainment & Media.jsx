@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import Button from "../components/Button";
 
 const cardData = [
   {
@@ -234,6 +236,11 @@ function  EntertainmentAndMedia() {
         <hr></hr>
         </div>
       ))}
+      <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
+        <Link to="/">
+            <Button>Go to Home</Button>
+        </Link>
+      </div>
     </div>
   );
 }

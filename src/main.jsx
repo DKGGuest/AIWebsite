@@ -16,15 +16,14 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
         <BrowserRouter>
             <ScrollToTop />
-        <Routes>
+            <Routes>
                 <Route path="/" element={<App />} />
                 <Route path="/healthcare-details" element={<Healthcare />} />
                 <Route path="/finance-details" element={<Finance />} />
                 <Route path="/manufacturing-and-automotive-details" element={<ManufacturingAndAutomotive />} /> 
-                <Route path="/education-details" element={<Education />}  />
-                <Route path="/entertainment-and-media-details" element={<EntertainmentAndMedia />}  />
-                <Route path="//explore-more" element={<ExploreMorePage />}  />
-                
+                <Route path="/education-details" element={<Education />} />
+                <Route path="/entertainment-and-media-details" element={<EntertainmentAndMedia />} />
+                <Route path="/explore-more" element={<ExploreMorePage />}  /> 
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
