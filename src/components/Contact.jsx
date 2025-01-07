@@ -11,10 +11,11 @@ const Contact =  () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [organization, setOrganization] = useState("")
   const [number, setNumber] = useState('');
   const [isToast, setisToast] = useState(false);
   function Check() {
-    if (!message || !email || !name || !number) {
+    if (!message || !organization || !email || !name || !number) {
       toast.error("Invalid inputs", {
         style: { backgroundColor: "#303030", color: "#fff" },
       });
@@ -32,6 +33,7 @@ const Contact =  () => {
         name: name,
         message: message,
         email: email,
+        organization: organization,
         number: number
       })
       .then((response) => {
@@ -77,7 +79,7 @@ const Contact =  () => {
             action=""
             onSubmit={handleForm}
           >
-            <div className="grid sm:grid-cols-3 grid-cols-1 gap-x-8 gap-y-4 w-full justify-center">
+            <div className="grid sm:grid-cols-4 grid-cols-1 gap-x-8 gap-y-4 w-full justify-center">
               <div>
                 <label className="text-primary font-semibold">
                   Your Name
@@ -102,6 +104,19 @@ const Contact =  () => {
                     type="email"
                     name="email"
                     id="email"
+                  />
+                </label>
+              </div>
+
+              <div>
+                <label className="text-primary font-semibold">
+                  Your Organization
+                  <input
+                    onChange={(e) => setOrganization(e.target.value)}
+                    className="w-full bg-white text-black rounded-md h-10 px-2"
+                    type="text"
+                    name="organization"
+                    id="organization"
                   />
                 </label>
               </div>
