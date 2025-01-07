@@ -13,7 +13,7 @@ const benefits = [
         backgroundUrl: "./src/assets/benefits/card-1.svg",
         iconUrl: benefitIcon1,
         imageUrl: benefitImage2,
-        url: "/healthcare-details",
+        url: "/healthcareDetails",
     },
     {
         title: "Finance",
@@ -22,7 +22,7 @@ const benefits = [
         iconUrl: benefitIcon2,
         imageUrl: benefitImage2,
         light: true,
-        url: "/finance-details"
+        url: "/financeDetails"
     },
     {
         title: "Manufacturing & Automotive",
@@ -30,7 +30,7 @@ const benefits = [
         backgroundUrl: "./src/assets/benefits/card-3.svg",
         iconUrl: benefitIcon3,
         imageUrl: benefitImage2,
-        url: '/manufacturing-and-automotive-details',
+        url: '/manufacturingAndAutomotiveDetails',
     },
     {
         title: "Education",
@@ -39,7 +39,7 @@ const benefits = [
         iconUrl: benefitIcon4,
         imageUrl: benefitImage2,
         light: true,
-        url: '/education-details',
+        url: '/educationDetails',
     },
     {
         title: "Entertainment & Media",
@@ -47,7 +47,7 @@ const benefits = [
         backgroundUrl: "./src/assets/benefits/card-5.svg",
         iconUrl: benefitIcon1,
         imageUrl: benefitImage2,
-        url: '/entertainment-and-media-details',
+        url: '/entertainmentAndMediaDetails',
     },
     {
         title: "B2C",

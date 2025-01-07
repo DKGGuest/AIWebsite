@@ -107,7 +107,7 @@ const Roadmap = () => (
             </div>
 
             <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-                <Link to="/explore-more">
+                <Link to="/exploreMore">
                     <Button>Explore More</Button>
                 </Link>
             </div>

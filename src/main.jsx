@@ -18,12 +18,12 @@ ReactDOM.createRoot(document.getElementById("root")).render(
             <ScrollToTop />
             <Routes>
                 <Route path="/" element={<App />} />
-                <Route path="/healthcare-details" element={<Healthcare />} />
-                <Route path="/finance-details" element={<Finance />} />
-                <Route path="/manufacturing-and-automotive-details" element={<ManufacturingAndAutomotive />} /> 
-                <Route path="/education-details" element={<Education />} />
-                <Route path="/entertainment-and-media-details" element={<EntertainmentAndMedia />} />
-                <Route path="/explore-more" element={<ExploreMorePage />}  /> 
+                <Route path="/healthcareDetails" element={<Healthcare />} />
+                <Route path="/financeDetails" element={<Finance />} />
+                <Route path="/manufacturingAndAutomotiveDetails" element={<ManufacturingAndAutomotive />} /> 
+                <Route path="/educationDetails" element={<Education />} />
+                <Route path="/entertainmentAndMediaDetails" element={<EntertainmentAndMedia />} />
+                <Route path="/exploreMore" element={<ExploreMorePage />}  /> 
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
