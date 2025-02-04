@@ -15,25 +15,35 @@ import ExploreMorePage from "./pages-dummy/ExploreMorePage";
 const App = () => {
   return (
     <>
-    <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Navbar />
-        <Hero />
-        <Benefits />
-        {/* <Collaboration /> */}
-        <Roadmap />
-        {/* <Services /> */}
-        <Pricing />
-        <Contact />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <Benefits />
+                {/* <Collaboration /> */}
+                <Roadmap />
+                {/* <Services /> */}
+                <Pricing />
+                <Contact />
+              </>
+            }
+          />
+          <Route path="/explore-more" element={<ExploreMorePage />} />
+        </Routes>
         <Footer />
-    </div>
+      </div>
 
-    <div className="fixed bottom-1 right-2 " style={{ zIndex: "6", left: "initial" }}>
+      <div className="fixed bottom-1 right-2" style={{ zIndex: "6", left: "initial" }}>
         <WhatsAppChat />
-    </div>
-
-    
-</>
+      </div>
+    </>
   );
 };
 
-export default App;
+export default App; 
+
+

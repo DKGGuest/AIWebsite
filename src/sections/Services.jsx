@@ -58,6 +58,7 @@ const Services = () => {
                                 <ChatBubbleWing className="absolute left-full bottom-0" />
                             </div> */}
                         </div>
+                        
 
                         <div className="p-4 bg-[#15131D] rounded-3xl overflow-hidden lg:min-h-[46rem]">
                             {/* <div className="py-12 px-4 xl:px-8">
