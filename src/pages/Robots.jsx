@@ -5,7 +5,7 @@ const Robots = () => {
     <pre>
       {`User-agent: *
 Allow: /
-Sitemap: https://www.yourwebsite.com/sitemap.xml`}
+Sitemap: https://www.dkglabs.com/sitemap.xml`}
     </pre>
   );
 };

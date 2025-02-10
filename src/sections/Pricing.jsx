@@ -6,25 +6,25 @@ const pricing = [
     {
         title: "Base",
         description: "Plug-and-play IoT support, No custom development",
-        price: "$199/month or $2,000/year",
+        price: "FREE ",
         features: ["Standard AI/Gen AI tools", "Monitoring, alerts, and basic reporting"],
     },
     {
         title: "Growth",
         description: "IoT dashboards, Minor customizations (e.g., branding, workflows)",
-        price: "$499/month or $5,000/year + resource fees",
+        price: "$199/month  $2,000/year",
         features: ["Advanced analytics", "Pre-built industry templates"],
     },
     {
         title: "Pro",
         description: "IoT analytics, Moderate custom development (e.g., apps, tailored workflows)",
-        price: "$999/month or $10,000/year + customization fees + resource costs",       
+        price: "$499/month  $5,000/year + resource fees",       
         features: ["Predictive insights", "Domain-specific optimizations"],
     },
     {
         title: "Enterprise",
         description: "End-to-end IoT solutions, Extensive custom software development",
-        price: "Custom pricing starting at $25,000/year",        
+        price: "$999/month  $10,000/year + customization fees + resource costs",        
         features: ["Real-time AI optimization", "Enterprise-grade scalability"],
     },
     {
@@ -53,19 +53,25 @@ const Pricing = () => {
                         {pricing.map((item, i) => (
                             <div key={i} className="w-full h-full px-6 py-8 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto mb-6">
                                 <h4 className="h4 mb-4">{item.title}</h4>
-
-                                <p className="body-2 min-h-[4rem] mb-3 text-white/50">{item.description}</p>
-
-                                <div className="flex items-center h-[5.5rem] mb-6">
+                                <div className="flex items-center h-[8.0rem] mb-6">
                                     {item.price && (
                                         <>
                                             <div className="h3 text-[0.75rem] sm:text-[1rem] md:text-[1.25rem]"></div>
-                                            <div className="text-[1.125rem] sm:text-[1.25rem] md:text-[1.5rem] leading-none font-bold">
+                                            <div className="text-[1.125rem] sm:text-[1.25rem] md:text-[2.0rem] leading-none font-bold">
                                                 {item.price}
                                             </div>
                                         </>
                                     )}
                                 </div>
+                                 {/* Centering the OR text */}
+            <div className="flex justify-center items-center h-[3rem]">
+                <span className="text-[1.125rem] sm:text-[1.25rem] md:text-[2.0rem] leading-none font-bold">
+                    
+                </span>
+            </div>
+                             
+
+                                <p className="body-2 min-h-[4rem] mb-3 text-white/50">{item.description}</p>
 
                                 {/* <Button className="w-full mb-6" href={item.price ? "/pricing" : "mailto:your-email@domain.com"} white={item.price}>
                                     {item.price ? "Get started" : "Contact us"}
