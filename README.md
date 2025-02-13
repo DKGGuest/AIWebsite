@@ -7,7 +7,7 @@ This is a modern startup website, made with React.js & TailwindCSS. The whole de
 <a href="https://bitbuster-startup-website.vercel.app">View Website</a>
 
 
-## Features
+## Features 
 
 -  [x]  **Beautiful Sections**: Includes hero, services, features, how to use, roadmap, pricing sections.
 
