@@ -28,7 +28,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                 <Route path="/exploreMore" element={<ExploreMorePage />} />
                 <Route path="/sitemap.xml" element={<Sitemap />} />
                 <Route path="/robots.txt" element={<Robots />} />
-                
             </Routes>
         </BrowserRouter>
     </React.StrictMode>
