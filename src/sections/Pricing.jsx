@@ -53,18 +53,18 @@ const Pricing = () => {
                         {pricing.map((item, i) => (
                             <div key={i} className="w-full h-full px-6 py-8 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto mb-6">
                                 <h4 className="h4 mb-4">{item.title}</h4>
-                                <div className="flex items-center h-[6.0rem] mb-6">
+                                <div className="flex items-center h-[8.0rem] mb-6">
                                     {item.price && (
                                         <>
                                             <div className="h3 text-[0.75rem] sm:text-[1rem] md:text-[1.25rem]"></div>
-                                            <div className="text-[1.125rem] sm:text-[1.25rem] md:text-[1.8rem] leading-none font-bold">
+                                            <div className="text-[1.125rem] sm:text-[1.25rem] md:text-[2.0rem] leading-none font-bold">
                                                 {item.price}
                                             </div>
                                         </>
                                     )}
                                 </div>
                                  {/* Centering the OR text */}
-            <div className="flex justify-center items-center h-[2rem]">
+            <div className="flex justify-center items-center h-[3rem]">
                 <span className="text-[1.125rem] sm:text-[1.25rem] md:text-[2.0rem] leading-none font-bold">
                     
                 </span>

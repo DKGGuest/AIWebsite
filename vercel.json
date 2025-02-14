@@ -1,7 +1,23 @@
 {
-  "routes": [
-    { "src": "/sitemap.xml", "dest": "/sitemap" },
-    { "src": "/robots.txt", "dest": "/robots" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
-}
+    "routes": [
+      {
+        "src": "/sitemap.xml",
+        "dest": "/sitemap.xml"
+      },
+      {
+        "src": "/robots.txt",
+        "dest": "/robots.txt"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ]
+  }
+  
+  {
+    "routes": [
+      { "src": "/(.*)", "dest": "/index.html" }
+    ]
+  }
+  
