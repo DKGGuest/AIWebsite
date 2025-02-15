@@ -95,10 +95,6 @@ const Sitemap = () => {
     {
       url: 'https://www.dkglabs.com/#contact',
       lastModified: '2025-01-19T09:00:33+00:00'
-    },
-    {
-      url: 'https://www.dkglabs.com/sitemap.xml',
-      lastModified: '2025-01-19T09:00:33+00:00'
     }
   ];
 
@@ -138,7 +134,7 @@ const Sitemap = () => {
           ))}
         </tbody>
       </table>
-      
+
     </div>
   );
 };
