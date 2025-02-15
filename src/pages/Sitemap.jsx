@@ -57,7 +57,7 @@
 
 
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Sitemap = () => {
   const location = useLocation();
@@ -138,14 +138,9 @@ const Sitemap = () => {
           ))}
         </tbody>
       </table>
+      
     </div>
   );
 };
 
-const WrappedSitemap = () => (
-  <Router>
-    <Sitemap />
-  </Router>
-);
-
-export default WrappedSitemap;
+export default Sitemap;
