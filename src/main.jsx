@@ -3,6 +3,8 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import App from "./App.jsx";
+import Sitemap from "./pages/Sitemap.jsx";  // Ensure these files exist
+import Robots from "./pages/Robots.jsx";
 import "./index.css";
 import Healthcare from "./pages/Healthcare.jsx";
 import Finance from "./pages/Finance.jsx";
@@ -11,8 +13,7 @@ import Education from "./pages/Education.jsx";
 import EntertainmentAndMedia from "./pages/Entertainment & Media.jsx";
 import ExploreMorePage from "./pages-dummy/ExploreMorePage.jsx";
 import ScrollToTop from "./components/ScrollToTop.jsx";
-import Sitemap from "./pages/Sitemap.jsx";
-import Robots from "./pages/Robots.jsx";
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
