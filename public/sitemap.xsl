@@ -44,10 +44,6 @@
                     <td><a href="https://www.dkglabs.com/#contact">https://www.dkglabs.com/#contact</a></td>
                     <td>2025-01-19T09:00:33+00:00</td>
                 </tr>
-                <tr>
-                    <td><a href="https://www.dkglabs.com/sitemap.xml">https://www.dkglabs.com/sitemap.xml</a></td>
-                    <td>2025-01-19T09:00:33+00:00</td>
-                </tr>
             </table>
         </body>
         </html>
