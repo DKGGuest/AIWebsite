@@ -76,10 +76,7 @@ const Sitemap = () => {
   }, [location]);
 
   const sitemaps = [
-    {
-      url: 'https://www.dkglabs.com/',
-      lastModified: '2025-01-19T09:00:33+00:00'
-    },
+    
     {
       url: 'https://www.dkglabs.com/#features',
       lastModified: '2025-01-19T09:00:33+00:00'
