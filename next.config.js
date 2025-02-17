@@ -1,15 +1,16 @@
-module.exports = {
-    async headers() {
-      return [
-        {
-          source: "/sitemap.xml",
-          headers: [{ key: "Content-Type", value: "application/xml" }],
-        },
-        {
-          source: "/robots.txt",
-          headers: [{ key: "Content-Type", value: "text/plain" }],
-        },
-      ];
-    },
-  };
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+  async rewrites() {
+    return [
+      {
+        source: "/sitemap.xml",
+        destination: "/api/sitemap",
+      },
+    ];
+  },
+};
+
+module.exports = nextConfig;
+
   

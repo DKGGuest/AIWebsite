@@ -134,7 +134,7 @@ const Sitemap = () => {
           ))}
         </tbody>
       </table>
-
+      
     </div>
   );
 };
