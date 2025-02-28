@@ -1,18 +1,23 @@
 import React from "react";
 import Section from "./Section";
-import { youtube, linkedin } from "../assets";
+import { youtube, linkedin, twitter,facebook } from "../assets";
 
 const socials = [
-    {
-        title: "Youtube",
-        iconUrl: youtube,
-        url: "https://www.youtube.com/@DKGLabsPvtLtd",
-    },
     {
         title: "LinkedIn",
         iconUrl: linkedin,
         url: "https://www.linkedin.com/company/dkg-labs/",
     },
+    {
+        title: "Facebook",
+        iconUrl: facebook,
+        url: "https://www.facebook.com/DKGLabs",
+    },
+    {
+        title: "Twitter",
+        iconUrl: twitter,
+        url: "https://www.twitter.com/DKGLabs",
+    },     
 ];
 
 const Footer = () => {
