@@ -19,6 +19,7 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.dkglabs.com/rss.xml">
     <link rel="icon" href="https://www.dkglabs.com/favicon.ico" type="image/x-icon">
 
+
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Generative AI & Computer Vision Solutions | DKG Labs">
     <meta property="og:description" content="Explore AI-driven solutions in Computer Vision and Generative AI for B2B automation and industrial AI applications.">
@@ -48,32 +49,34 @@
     </script>
 
     <!-- Performance Optimizations -->
-    <link rel="preconnect" href="https://www.google-analytics.com">
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="styles.min.css">
+<link rel="preconnect" href="https://www.google-analytics.com">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="styles.min.css">
 
-    <!-- Google Analytics Tracking -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-XXXXX-Y');
-    </script>
+    <!-- Google Analytics Tracking (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Replace 'G-XXXXXXXXXX' with your actual GA4 Measurement ID
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
 
     <title>Generative AI & Computer Vision for B2B | DKG Labs</title>
 </head>
 
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    
     <div id="root"></div>
 
     <!-- Optimized Heading -->
-    <h1>Generative AI & Computer Vision for Industrial Automation</h1>
+    <h1>AI-Powered Computer Vision & Generative AI for B2B</h1>
 
     <!-- Optimized Image -->
-    <img src="ai-vision.jpg" alt="AI-powered quality inspection and industrial automation">
+    <img src="ai-vision.jpg" alt="AI-powered quality inspection and automated visual analysis">
 
     <!-- Main JavaScript -->
     <script type="module" src="/src/main.jsx"></script>
