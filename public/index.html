@@ -6,7 +6,7 @@
     
     <!-- SEO Meta Tags -->
     <meta name="title" content="DKG Labs – AI-Driven Computer Vision & AI Tech">
-    <meta name="description" content="Discover how DKG Labs leverages Generative AI and Computer Vision to revolutionize B2B industries, enhance automation, optimize quality control, and drive enterprise growth with cutting-edge AI solutions.">    
+    <meta name="description" content="Discover how DKG Labs leverages Generative AI and Computer Vision to revolutionize B2B industries, enhance automation, optimize quality control, and drive enterprise growth with cutting-edge AI solutions.">
     <meta name="keywords" content="Generative AI, Computer Vision, AI-powered quality inspection, Automated visual inspection, Industrial video analytics, Surface defect detection, Deep learning for manufacturing">
     <meta name="author" content="DKG Labs">
     <meta name="robots" content="index, follow">
@@ -17,20 +17,19 @@
     <!-- Additional SEO Links -->
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.dkglabs.com/sitemap.xml">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://www.dkglabs.com/rss.xml">
-    <link rel="icon" href="https://www.dkglabs.com/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <!-- Open Graph Meta Tags for Social Sharing -->
     <meta property="og:title" content="Generative AI & Computer Vision Solutions | DKG Labs">
     <meta property="og:description" content="Explore AI-driven solutions in Computer Vision and Generative AI for B2B automation and industrial AI applications.">
     <meta property="og:url" content="https://www.dkglabs.com/">
-    <meta property="og:image" content="https://www.dkglabs.com/og-image.jpg">
-    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.dkglabs.com/assets/ai-vision.webp">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Generative AI & Computer Vision for B2B | DKG Labs">
     <meta name="twitter:description" content="Enhance automation and quality control with AI-powered Computer Vision and Generative AI solutions.">
-    <meta name="twitter:image" content="https://www.dkglabs.com/twitter-image.jpg">
+    <meta name="twitter:image" content="https://www.dkglabs.com/assets/ai-vision.webp">
 
     <!-- Schema Markup for Organization -->
     <script type="application/ld+json">
@@ -39,19 +38,33 @@
         "@type": "Organization",
         "name": "DKG Labs",
         "url": "https://www.dkglabs.com/",
-        "logo": "https://www.dkglabs.com/logo.png",
+        "logo": "https://www.dkglabs.com/assets/logo.webp",
         "contactPoint": {
             "@type": "ContactPoint",
             "telephone": "+91-9810805605",
             "contactType": "customer service"
-        }
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "123 Tech Street",
+            "addressLocality": "Innovation City",
+            "addressCountry": "India"
+        },
+        "sameAs": [
+            "https://x.com/DKGLabs",
+            "https://linkedin.com/company/dkg-labs",
+            "https://facebook.com/DKGLabs",
+        ]
     }
     </script>
 
     <!-- Performance Optimizations -->
     <link rel="preconnect" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="styles.min.css">
+    <link rel="stylesheet" href="/styles.min.css">
+
+    <!-- Preload Key Image -->
+    <link rel="preload" href="/assets/ai-vision.webp" as="image">
 
     <!-- Google Analytics Tracking -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
@@ -62,19 +75,67 @@
       gtag('config', 'UA-XXXXX-Y');
     </script>
 
+    <!-- Facebook Pixel -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" 
+           src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1" alt="Facebook Pixel Tracker"/>
+    </noscript>
+
     <title>Generative AI & Computer Vision for B2B | DKG Labs</title>
 </head>
 
 <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     
-    <div id="root"></div>
-
-    <!-- Optimized Heading -->
+    <!-- Single H1 Tag -->
     <h1>Generative AI & Computer Vision for Industrial Automation</h1>
 
-    <!-- Optimized Image with Lazy Loading -->
-    <img src="ai-vision.jpg" alt="AI-powered quality inspection and industrial automation" loading="lazy" width="800" height="600">
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>AI-Driven Solutions for B2B Industries</h2>
+            <p>Discover how DKG Labs leverages Generative AI and Computer Vision to revolutionize B2B industries, enhance automation, optimize quality control, and drive enterprise growth.</p>
+            
+            <!-- Optimized Image with Alt Attribute, WebP Format, and Proper Sizing -->
+            <picture>
+                <source src="/assets/ai-vision.webp" type="image/webp">
+                <img src="/assets/ai-vision.jpg" alt="AI-powered quality inspection and industrial automation" width="800" height="400" loading="lazy">
+            </picture>
+        </section>
+
+        <!-- Contact Section -->
+        <footer>
+            <h2>Contact DKG Labs</h2>
+            <address>
+                <p>DKG Labs</p>
+                <p>123 Tech Street, Innovation City, India</p>
+                <p>Phone: <a href="tel:+919810805605">+91-9810805605</a></p>
+                <p>Email: <a href="mailto:mdoffice@dkgrouplabs.com">contact@dkglabs.com</a></p>
+            </address>
+
+            <!-- Social Media Links -->
+            <ul>
+                <li><a href="https://x.com/DKGLabs" rel="nofollow">Twitter</a></li>
+                <li><a href="https://linkedin.com/company/dkg-labs" rel="nofollow">LinkedIn</a></li>
+                <li><a href="https://facebook.com/DKGLabs" rel="nofollow">Facebook</a></li>
+            </ul>
+        </footer>
+    </main>
+
+    <!-- React App Root -->
+    <div id="root"></div>
 
     <!-- Main JavaScript -->
     <script type="module" src="/src/main.jsx"></script>
