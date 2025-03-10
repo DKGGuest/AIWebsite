@@ -9,7 +9,7 @@ const buildPath = path.join(__dirname, 'build');
 app.use(express.static(buildPath));
 
 // Explicitly serve sitemap.xml and robots.txt
-app.get(['/sitemap.xml', '/robots.txt'], (req, res) => {
+app.get(['/sitemap.xml', '/robots.txt' ,'/healthcareDetails'], (req, res) => {
   const filePath = path.join(buildPath, req.path);
   
   // Check if file exists before sending
