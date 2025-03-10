@@ -4,7 +4,7 @@ import Heading from "../components/Heading";
 import Section from "../components/Section";
 
 const benefits = [
-  { title: "Healthcare", url: "/healthcareDetails" },
+  { title: "Healthcare", url: "/healthcareDetails/" },
   { title: "Finance", url: "/financeDetails" },
   { title: "Manufacturing & Automotive", url: "/manufacturingAndAutomotiveDetails" },
   { title: "Education", url: "/educationDetails" },
