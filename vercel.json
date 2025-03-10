@@ -26,5 +26,12 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/healthcareDetails", "destination": "/index.html" },
+    { "source": "/financeDetails", "destination": "/index.html" },
+    { "source": "/manufacturingAndAutomotiveDetails", "destination": "/index.html" },
+    { "source": "/educationDetails", "destination": "/index.html" },
+    { "source": "/entertainmentAndMediaDetails", "destination": "/index.html" }
   ]
 }
