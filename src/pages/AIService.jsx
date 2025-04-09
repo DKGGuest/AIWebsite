@@ -1,46 +1,47 @@
 import { motion } from "framer-motion";
 import Button from "../components/Button";
 import { Card, CardContent } from "../components/ui/card";
-import { MessageCircle, X } from "lucide-react";
+
 import React, { useState, lazy, Suspense } from "react";
-// const Chatbot = lazy(() => import("../components/Chatbot"));
+import { Link } from "react-router-dom";// Import Link from react-router-dom
+import WhatsAppChat from "../components/WhatsAppChat"; // Import the WhatsAppChat component
+import LeadFormModal from "../components/LeadFormModal"; // Import the LeadFormModal component
 
 const AIService = () => {
     const [showChatbot, setShowChatbot] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [selectedCase, setSelectedCase] = useState(null);
+    const [isLeadFormOpen, setIsLeadFormOpen] = useState(false);
 
     return (
         <div className="bg-gradient-to-b from-gray-900 to-black text-white min-h-screen">
 
             {/* ✅ Header Section */}
             <header className="relative text-center py-16 px-6">
-                <h1 className="text-6xl font-extrabold tracking-tight bg-gradient-to-r from-blue-500 to-purple-400 text-transparent bg-clip-text">
+                <h1 className="text-6xl font-extrabold tracking-tight text-white">
                     AI Consulting & AI-as-a-Service
                 </h1>
                 <p className="mt-6 text-xl max-w-3xl mx-auto text-gray-300">
                     Unlock AI-driven innovation with <strong>Foundation Models, Multi-Modal AI, and Hyper-Personalized Automation</strong> tailored for your enterprise.
                 </p>
-                <Button className="mt-8 px-8 py-4 text-lg font-semibold bg-blue-600 hover:bg-blue-700 shadow-lg">
+                <button
+                    className="mt-8 px-8 py-4 text-lg font-semibold bg-blue-600 hover:bg-blue-700 shadow-lg"
+                    onClick={() => setIsLeadFormOpen(true)} // Open the modal on click
+                >
                     Get a Free Consultation
-                </Button>
-
-                {/* 3D AI Head Model */}
-                {/* <Canvas className="h-80 mt-10">
-          <OrbitControls />
-          <ambientLight intensity={0.5} />
-          <directionalLight position={[2, 2, 2]} />
-          <mesh>
-            <sphereGeometry args={[1, 32, 32]} />
-            <meshStandardMaterial color="blue" wireframe />
-          </mesh>
-        </Canvas> */}
+                </button>
             </header>
 
+            {/* Lead Form Modal */}
+            <LeadFormModal
+                isOpen={isLeadFormOpen}
+                onClose={() => setIsLeadFormOpen(false)} // Close the modal
+            />
+
             {/* Our AI Expertise Section */}
-            <section className="max-w-7xl mx-auto py-16 px-6">
+            <section className="max-w-7xl mx-auto py-4 px-4">
                 <h2 className="text-4xl font-bold text-center text-blue-400">Our AI Expertise</h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
                     {services.map((service, index) => (
                         <motion.div key={index} whileHover={{ scale: 1.05 }} className="flex">
                             <Card className="bg-gray-800 p-6 text-center shadow-xl border border-blue-500 rounded-lg hover:shadow-blue-500 flex-1">
@@ -55,9 +56,9 @@ const AIService = () => {
             </section>
 
             {/* AI Success Stories Section */}
-            <section className="max-w-7xl mx-auto py-16 px-6">
+            <section className="max-w-7xl mx-auto py-4 px-4">
                 <h2 className="text-4xl font-bold text-center text-green-400">AI Success Stories</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                     {caseStudies.map((caseStudy, index) => (
                         <motion.div key={index} whileHover={{ scale: 1.05 }} onClick={() => { setSelectedCase(caseStudy); setShowModal(true); }} className="flex">
                             <Card className="bg-gray-800 p-6 shadow-xl border border-green-500 cursor-pointer hover:shadow-green-500 flex-1">
@@ -72,9 +73,9 @@ const AIService = () => {
             </section>
 
             {/*  What Our Clients Say Section (Restored) */}
-            <section className="max-w-7xl mx-auto py-16 px-6">
+            <section className="max-w-7xl mx-auto py-4 px-4">
                 <h2 className="text-4xl font-bold text-center text-yellow-400">What Our Clients Say</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
                     {testimonials.map((testimonial, index) => (
                         <motion.div key={index} whileHover={{ scale: 1.05 }} className="flex">
                             <Card className="bg-gray-800 p-6 shadow-xl border border-yellow-500 rounded-lg hover:shadow-yellow-500 flex-1">
@@ -122,12 +123,15 @@ const AIService = () => {
 
             {/* ✅ Floating Chat Button */}
             <div className="fixed bottom-6 right-6">
-                <button
-                    className="bg-blue-600 p-4 rounded-full shadow-lg hover:bg-blue-700"
-                    onClick={() => setShowChatbot(!showChatbot)}
-                >
-                    <MessageCircle className="text-white w-6 h-6" />
-                </button>
+                <WhatsAppChat />
+            </div>
+            
+            <div className="fixed top-6 left-6">
+                <Link to="/">
+                    <button className="bg-gray-800 text-white px-3 py-1 rounded-md shadow-md text-sm hover:bg-gray-700">
+                        Back to Home
+                    </button>
+                </Link>
             </div>
 
             {/* ✅ Lead Capture Form */}
