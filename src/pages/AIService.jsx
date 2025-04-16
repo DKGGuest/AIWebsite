@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
-import Button from "../components/Button";
 import { Card, CardContent } from "../components/ui/card";
-
+import Footer from "../components/Footer";
 import React, { useState, lazy, Suspense } from "react";
 import { Link } from "react-router-dom";// Import Link from react-router-dom
 import WhatsAppChat from "../components/WhatsAppChat"; // Import the WhatsAppChat component
@@ -134,8 +133,8 @@ const AIService = () => {
                 </Link>
             </div>
 
-            {/* ✅ Lead Capture Form */}
-            {/* <LeadCaptureForm /> */}
+            
+            <Footer />
         </div>
     );
 }
