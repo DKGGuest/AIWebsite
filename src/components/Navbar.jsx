@@ -13,6 +13,7 @@ const navigation = [
     {  id: "2", title: "AI as a Service", url: "/ai-consulting" },
     { id: "3", title: "Gen AI Solutions", url: "#roadmap" },
     { id: "4", title: "Contact", url: "#contact", onlyMobile: true },
+    { id: "5", title: <>INCIMAT <br /> track n trace</>, url: "https://www.protrack365.com/", onlyMobile: true },
 ];
 
 const Header = () => {
@@ -63,6 +64,8 @@ const Header = () => {
                             <a
                                 key={item.id}
                                 href={item.url}
+                                target={item.url.startsWith("http") ? "_blank" : undefined}
+                                rel={item.url.startsWith("http") ? "noopener noreferrer" : undefined}
                                 className={`block relative font-code text-2xl uppercase text-white transition-colors hover:text-color-1 ${item.onlyMobile ? "lg:hidden" : ""} px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold ${
                                     item.url === hash ? "z-2 lg:text-white" : "lg:text-white/50"
                                 } lg:leading-5 lg:hover:text-white xl:px-12`}
@@ -72,6 +75,15 @@ const Header = () => {
                         ))}
                     </div>
                 </nav>
+
+                <Button
+                    className="hidden lg:flex mr-8"
+                    href="https://www.protrack365.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    INCIMAT <br /> track n trace
+                </Button>
 
                 <a href="#contact" className="button hidden mr-8 text-white/50 transition-colors hover:text-white lg:block">
                     Contact

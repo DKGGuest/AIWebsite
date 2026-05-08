@@ -19,9 +19,9 @@
 
 // export default Button;
 
-const Button = ({ className, href, onClick, children, white }) => {
+const Button = ({ className, href, onClick, children, white, ...props }) => {
     const handleClick = (e) => {
-        if (href) {
+        if (href && !props.target) {
             e.preventDefault();
         }
         onClick?.(e);
@@ -32,7 +32,7 @@ const Button = ({ className, href, onClick, children, white }) => {
     } hover:text-color-1 from-purple-500 to-pink-500 ${className || ""}`;
 
     const renderedButton = (
-        <button className={classes} onClick={handleClick}>
+        <button className={classes} onClick={handleClick} {...props}>
             <span
                 className={`relative z-10 px-5 py-2.5 ${
                     white ? "" : "bg-gray-900"
@@ -44,7 +44,7 @@ const Button = ({ className, href, onClick, children, white }) => {
     );
 
     const renderedLink = (
-        <a href={href} className={classes} >
+        <a href={href} className={classes} {...props}>
             <span
                 className={`relative w-full px-5 py-2.5 ${
                     white ? "" : "bg-gray-900"
